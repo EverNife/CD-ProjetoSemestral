@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.finalcraft.unesp.cd.client.javafx.controller.ClientController">
+   <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #303040;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#onClose" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@client/icons/appbar.close.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="500.0" prefWidth="158.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton onAction="#onFirstProgram" prefHeight="84.0" prefWidth="159.0" text=" " textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@client/icons/number-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton onAction="#onSecondProgram" prefHeight="84.0" prefWidth="157.0" text=" " textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@client/icons/number-2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton onAction="#onThirdProgram" prefHeight="84.0" prefWidth="157.0" text=" " textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@client/icons/number-3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

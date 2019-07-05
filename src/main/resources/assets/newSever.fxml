@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.finalcraft.unesp.cd.client.javafx.controller.ClientController">
+   <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #303040;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#onClose" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@client/icons/appbar.close.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="500.0" prefWidth="117.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

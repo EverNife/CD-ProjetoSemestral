@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXBadge?>
+<?import com.jfoenix.controls.JFXDialog?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.finalcraft.unesp.cd.server.javafx.controller.ServerController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="723.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <JFXBadge layoutY="7.0" />
+            <Label alignment="CENTER" layoutX="151.0" layoutY="21.0" prefHeight="17.0" prefWidth="422.0" text="Servidor">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXDialog layoutX="344.0" layoutY="111.0" prefWidth="0.0" />
+            <Line endX="331.0" layoutX="363.0" layoutY="63.0" startX="-333.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #303040;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#onClose" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@client/icons/appbar.close.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <BorderPane fx:id="consoleBorderPane" prefHeight="321.0" prefWidth="723.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
